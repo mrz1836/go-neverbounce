@@ -42,7 +42,7 @@ All official security responses are signed with it.
 We regularly scan for known vulnerabilities using:
 
 * [`govulncheck`](https://pkg.go.dev/golang.org/x/vuln/cmd/govulncheck): Checks Go code and dependencies for known vulnerabilities using the Go vulnerability database.
-* [`OSV-Scanner`](https://github.com/google/osv-scanner): As part of our CI (see `fortress.yml`), we check Go dependencies against the OSV.dev database.
+* [`ask nancy`](https://github.com/sonatype-nexus-community/nancy): As part of our CI (see `fortress.yml`), we run [nancy](https://github.com/sonatype-nexus-community/nancy) to check Go dependencies for vulnerabilities against the OSS Index. This helps us catch issues in third-party packages early.
 * [`gitleaks`](https://github.com/gitleaks/gitleaks): Scans the repository for sensitive data or secrets that may have been accidentally committed to the codebase.
 
 Want to run these yourself?
@@ -53,28 +53,6 @@ magex deps:audit
 ```
 
 This will check your local build for known issues in Go modules and dependencies.
-
-<br/>
-
-## 🔏 Credentials and Personal Data
-
-**go-neverbounce** handles two kinds of sensitive data: a NeverBounce API key and the email
-addresses (and any other columns) being verified.
-
-* **Never include a real API key or real contact data in an issue, pull request or report.**
-  Describe the problem with synthetic values (addresses under `example.com`, keys such as
-  `secret_example0000`).
-* The API key is held only inside function values the client holds, is sent only in the JSON body of
-  requests to `api.neverbounce.com` or a loopback test server, and never appears in a URL, an
-  error string or formatted output. A way to make the SDK print or send the key elsewhere is a
-  vulnerability: report it privately as described above.
-* Error strings never contain email addresses, row data, URLs, callback headers, response bodies or
-  provider messages. Provider messages are kept on errors only when the application opts in with
-  `WithProviderDiagnostics`, and the key is scrubbed from them.
-* The library never logs, prints, stores or caches data, and never reads credentials or
-  configuration from the environment (the default transport honors the standard proxy variables).
-  Verification results are contact data: access control, logging, retention and lawful use are
-  the calling application's responsibility.
 
 <br/>
 
