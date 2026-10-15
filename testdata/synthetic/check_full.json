@@ -1,0 +1,24 @@
+{
+  "status": "success",
+  "result": "valid",
+  "flags": ["has_dns", "has_dns_mx", "smtp_connectable", "role_account"],
+  "suggested_correction": "",
+  "address_info": {
+    "original_email": "support@example.com",
+    "normalized_email": "support@example.com",
+    "addr": "support",
+    "alias": "",
+    "host": "example.com",
+    "fqdn": "example.com",
+    "domain": "example",
+    "subdomain": "",
+    "tld": "com"
+  },
+  "credits_info": {
+    "paid_credits_used": 1,
+    "free_credits_used": 0,
+    "paid_credits_remaining": 4321,
+    "free_credits_remaining": 0
+  },
+  "execution_time": 377
+}

@@ -1,0 +1,21 @@
+{
+  "status": "success",
+  "total_results": 3,
+  "total_pages": 1,
+  "query": {"job_id": 1001, "valids": 1, "invalids": 1, "disposables": 1, "catchalls": 1, "unknowns": 1, "page": 0, "items_per_page": 10},
+  "results": [
+    {
+      "data": {"id": "id", "email": "email"},
+      "verification": {"result": "invalid", "flags": [], "suggested_correction": "", "address_info": {"original_email": "email"}}
+    },
+    {
+      "data": {"id": "1001", "email": "avery.example@example.com"},
+      "verification": {"result": "valid", "flags": ["has_dns", "has_dns_mx", "smtp_connectable"], "suggested_correction": ""}
+    },
+    {
+      "data": {"id": 1002, "email": "blake.example@example.org"},
+      "verification": {"result": "catchall", "flags": ["has_dns", "accepts_all"], "suggested_correction": ""}
+    }
+  ],
+  "execution_time": 18
+}

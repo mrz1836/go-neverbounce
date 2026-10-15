@@ -1,0 +1,22 @@
+{
+  "status": "success",
+  "id": 1001,
+  "job_status": "complete",
+  "filename": "signups-legacy.csv",
+  "created": "2026-10-15 09:00:00",
+  "started": "2026-10-15 09:00:12",
+  "finished": "2026-10-15 09:01:40",
+  "total_records": 4,
+  "total_billable": 3,
+  "total_processed": 4,
+  "total_valid": 2,
+  "total_invalid": 1,
+  "total_catchall": 0,
+  "total_disposable": 0,
+  "total_unknown": 0,
+  "total_duplicates": 1,
+  "total_bad_syntax": 1,
+  "bounce_estimate": 12.5,
+  "percent_complete": 100,
+  "execution_time": 21
+}

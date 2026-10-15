@@ -1,0 +1,25 @@
+{
+  "status": "success",
+  "id": 1001,
+  "filename": "signups-example.csv",
+  "created_at": "2026-10-15 09:00:00",
+  "started_at": "2026-10-15 09:00:12",
+  "finished_at": "2026-10-15 09:01:40",
+  "failure_reason": null,
+  "total": {
+    "records": 4,
+    "billable": 3,
+    "processed": 4,
+    "valid": 2,
+    "invalid": 1,
+    "catchall": 0,
+    "disposable": 0,
+    "unknown": 0,
+    "duplicates": 1,
+    "bad_syntax": 1
+  },
+  "bounce_estimate": 12.5,
+  "percent_complete": 100,
+  "job_status": "complete",
+  "execution_time": 31
+}
