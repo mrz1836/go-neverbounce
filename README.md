@@ -6,9 +6,9 @@
 
 <br/>
 
-<a href="https://github.com/mrz1836/go-neverbounce/releases"><img src="https://img.shields.io/github/release-pre/mrz1836/go-neverbounce?include_prereleases&style=flat-square&logo=github&color=black" alt="Release"></a>
+<a href="https://github.com/mrz1836/go-neverbounce/releases"><img src="https://img.shields.io/github/release-pre/mrz1836/go-neverbounce.svg?include_prereleases&style=flat-square&logo=github&color=black" alt="Release"></a>
 <a href="https://golang.org/"><img src="https://img.shields.io/github/go-mod/go-version/mrz1836/go-neverbounce?style=flat-square&logo=go&color=00ADD8" alt="Go Version"></a>
-<a href="https://github.com/mrz1836/go-neverbounce/blob/master/LICENSE"><img src="https://img.shields.io/github/license/mrz1836/go-neverbounce?style=flat-square&color=blue" alt="License"></a>
+<a href="https://github.com/mrz1836/go-neverbounce/blob/master/LICENSE"><img src="https://img.shields.io/github/license/mrz1836/go-neverbounce.svg?style=flat-square&color=blue" alt="License"></a>
 
 <br/>
 
